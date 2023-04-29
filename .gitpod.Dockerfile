@@ -1,9 +1,9 @@
 FROM gitpod/workspace-full
 
 # Install QEMU
-RUN apt-get update -q && \
-    apt-get install -y sudo curl wget qemu-kvm qemu-system-x86 unzip lscpu && \
-    apt-get clean && \
+RUN sudo apt-get update -q && \
+    sudo apt-get install -y sudo curl wget qemu-kvm qemu-system-x86 unzip lscpu && \
+    sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/*
 
 # Add the script to the Docker image
