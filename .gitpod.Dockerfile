@@ -2,7 +2,7 @@ FROM gitpod/workspace-full
 
 # Install QEMU
 RUN sudo apt-get update -q && \
-    sudo apt-get install -y sudo curl wget qemu-kvm qemu-system-x86 unzip lscpu && \
+    sudo apt-get install -y sudo curl wget qemu-kvm qemu-system-x86 unzip util-linux && \
     sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/*
 
