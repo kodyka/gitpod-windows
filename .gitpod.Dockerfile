@@ -8,8 +8,8 @@ RUN sudo apt-get update -q && \
 
 # Add the script to the Docker image
 COPY file.sh /usr/local/bin/setup_windows_vm.sh
-RUN chmod +x /usr/local/bin/setup_windows_vm.sh
+# RUN chmod +x /usr/local/bin/setup_windows_vm.sh
 
 # Set the entrypoint to run the script
-ENTRYPOINT ["/usr/local/bin/setup_windows_vm.sh"]
+# ENTRYPOINT ["/usr/local/bin/setup_windows_vm.sh"]
 
